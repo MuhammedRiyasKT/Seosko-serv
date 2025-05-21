@@ -17,8 +17,8 @@ export default function Contact() {
             <Col lg={5} className="mb-4 mb-lg-0">
               <Card className="border-0 shadow-sm h-100">
                 <Card.Body className="p-4">
-                  <h2 className="mb-4">Get In Touch</h2>
-                  <p className="lead mb-4">
+                  <h2 className="mb-4" style={{color:"#00A5E7"}}>Get In Touch</h2>
+                  <p className="lead mb-4" style={{color:"#84898C"}}>
                     We'd love to hear from you. Contact us using the information below or fill out the form.
                   </p>
 
@@ -26,31 +26,31 @@ export default function Contact() {
                     <div className="d-flex align-items-center mb-3">
                       <Telephone className="text-primary me-3" size={24} />
                       <div>
-                        <p className="mb-0">+91 8891768432</p>
-                        <p className="mb-0">+91 9946775783</p>
-                        <p className="mb-0">+965 55723383</p>
-                        <p className="mb-0">+971 50 7613383</p>
+                        <p className="mb-0" style={{color:"#84898C"}}>+91 8891768432</p>
+                        <p className="mb-0" style={{color:"#84898C"}}>+91 9946775783</p>
+                        <p className="mb-0" style={{color:"#84898C"}}>+965 55723383</p>
+                        <p className="mb-0" style={{color:"#84898C"}}>+971 50 7613383</p>
                       </div>
                     </div>
 
                     <div className="d-flex align-items-center mb-3">
                       <Envelope className="text-primary me-3" size={24} />
-                      <p className="mb-0">info@seoskoserv.com</p>
+                      <p className="mb-0" style={{color:"#84898C"}}>info@seoskoserv.com</p>
                     </div>
 
                     <div className="d-flex align-items-center mb-3">
                       <GeoAlt className="text-primary me-3" size={24} />
-                      <p className="mb-0">www.SeoskoServ.com</p>
+                      <p className="mb-0" style={{color:"#84898C"}}>www.SeoskoServ.com</p>
                     </div>
                   </div>
 
                   <div className="mt-5">
                     <h3 className="h4 mb-3">Our Market</h3>
                     <div className="d-flex flex-wrap">
-                      <span className="badge bg-primary me-2 mb-2 p-2">EUROPE</span>
-                      <span className="badge bg-primary me-2 mb-2 p-2">MIDDLE EAST</span>
-                      <span className="badge bg-primary me-2 mb-2 p-2">AFRICA</span>
-                      <span className="badge bg-primary me-2 mb-2 p-2">INDIA</span>
+                      <span className="badge me-2 mb-2 p-2" style={{background:"#00A5E7"}}>EUROPE</span>
+                      <span className="badge me-2 mb-2 p-2" style={{background:"#00A5E7"}}>MIDDLE EAST</span>
+                      <span className="badge me-2 mb-2 p-2" style={{background:"#00A5E7"}}>AFRICA</span>
+                      <span className="badge me-2 mb-2 p-2" style={{background:"#00A5E7"}}>INDIA</span>
                     </div>
                   </div>
 
@@ -116,8 +116,8 @@ export default function Contact() {
         <Container>
           <Row className="justify-content-center text-center mb-5">
             <Col md={8}>
-              <h2 className="section-title mb-4">OUR LOCATIONS</h2>
-              <p className="lead">Serving businesses across multiple regions</p>
+              <h2 className="section-title mb-4" style={{color:"#00A5E7"}}>OUR LOCATIONS</h2>
+              <p className="lead" style={{color:"#84898C"}}>Serving businesses across multiple regions</p>
             </Col>
           </Row>
 
@@ -128,7 +128,7 @@ export default function Contact() {
                   <img src="/src/assets/images/dubai.jpg" alt="Middle East Office" />
                 </div>
                 <Card.Body className="text-center p-4">
-                  <Building size={40} className="text-primary mb-3" />
+                  <Building size={40} className=" mb-3" style={{color:"#00A5E7"}} />
                   <h3 className="h4 mb-3">Middle East</h3>
                   <p>Dubai, UAE</p>
                   <p className="mb-0">+971 50 7613383</p>
@@ -141,7 +141,7 @@ export default function Contact() {
                   <img src="/src/assets/images/kochi.jpg" alt="India Office" />
                 </div>
                 <Card.Body className="text-center p-4">
-                  <Building size={40} className="text-primary mb-3" />
+                  <Building size={40} className=" mb-3" style={{color:"#00A5E7"}} />
                   <h3 className="h4 mb-3">India</h3>
                   <p>Kochi, Kerala</p>
                   <p className="mb-0">+91 8891768432</p>
@@ -154,7 +154,7 @@ export default function Contact() {
                   <img src="/src/assets/images/kuwait.jpg" alt="Kuwait Office" />
                 </div>
                 <Card.Body className="text-center p-4">
-                  <Building size={40} className="text-primary mb-3" />
+                  <Building size={40} className="mb-3" style={{color:"#00A5E7"}} />
                   <h3 className="h4 mb-3">Kuwait</h3>
                   <p>Kuwait City</p>
                   <p className="mb-0">+965 55723383</p>
@@ -168,7 +168,7 @@ export default function Contact() {
       <SectionWithBackground backgroundImage="/src/assets/images/thankyou.jpg" className="py-5" overlayColor="rgba(0, 0, 0, 0.75)">
         <Row className="justify-content-center text-center">
           <Col md={8} className="text-white">
-            <h1 className="display-4 mb-4">THANK YOU</h1>
+            <h1 className="display-4 mb-4 fw-bold">THANK YOU</h1>
             <p className="lead">
               We appreciate your interest in SeoskoServ. We look forward to helping your business grow and succeed.
             </p>

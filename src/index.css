@@ -193,14 +193,14 @@ section {
 }
 
 .navbar-logo {
-  width: 150px;
+  width: 170px;
   height: auto;
 }
 
 .nav-link {
   position: relative;
   transition: all 0.3s ease;
-  color: #000 !important;
+  color: #84898C !important;
 }
 
 .nav-link::after {
@@ -318,6 +318,7 @@ section {
   background-color: rgba(0, 165, 231, 0.1);
   margin-bottom: 1.5rem;
 }
+
 
 /* Region Box Styles */
 .region-box {

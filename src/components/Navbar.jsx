@@ -1,4 +1,4 @@
-"use client"
+
 
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
@@ -50,10 +50,10 @@ export default function Navbar() {
 
             {/* Right: Contact Info */}
             <div className="contact-info d-none d-lg-flex align-items-center">
-              <FiPhoneCall size={20} className="me-2 text-primary" />
+              <FiPhoneCall size={20} className="me-2" style={{color:"#00A5E7"}} />
               <div className="contact-text">
-                <div className="small">Contact any time</div>
-                <strong>+91 8891768432</strong>
+                <div className="small" style={{color:"#84898C"}}>Contact any time</div>
+                <strong style={{color:"#84898C"}}>+91 8891768432</strong>
               </div>
             </div>
           </div>

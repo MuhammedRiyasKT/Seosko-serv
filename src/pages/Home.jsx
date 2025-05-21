@@ -3,8 +3,9 @@ import ImageSlider from "../components/ImageSlider"
 import SectionWithBackground from "../components/SectionWithBackground"
 import AnimatedSection from "../components/AnimatedSection"
 import AnimatedElement from "../components/AnimatedElement"
-import { ArrowRight, PeopleFill, Building, Laptop } from "react-bootstrap-icons"
+import { ArrowRight, PeopleFill, Building, Laptop, Headset, Tools } from "react-bootstrap-icons"
 import { Link } from "react-router-dom"
+// import { Introduction } from "../data/introduction"
 
 export default function Home() {
   return (
@@ -18,11 +19,11 @@ export default function Home() {
       <AnimatedSection className="py-5" bgVectors={true}>
         <Row className="justify-content-center text-center">
           <Col md={10} lg={8}>
-            <h2 className="section-title mb-4">HELLO!</h2>
-            <p className="lead mb-4">
+            <h2 className="section-title mb-4" style={{ color: "#00A5E7" }}>HELLO!</h2>
+            <p className="lead mb-4" style={{ color: "#84898C" }}>
               Enter SEOSKOSERV, the partner every SME needs to drive efficiency and sustainable growth.
             </p>
-            <p className="mb-4">
+            <p className="mb-4" style={{ color: "#84898C" }}>
               SEOSKOSERV, the partner every SME in the GCC region needs to drive efficiency and sustainable growth.
             </p>
           </Col>
@@ -81,16 +82,16 @@ export default function Home() {
         <Row className="align-items-center">
           <Col lg={6} className="mb-4 mb-lg-0">
             <AnimatedElement animation="slideInLeft">
-              <h2 className="section-title text-start mb-4">WHO ARE WE?</h2>
-              <p>
+              <h2 className="section-title text-start mb-4 fw-bold" style={{ color: "#00A5E7" }}>Who Are We?</h2>
+              <p style={{ color: "#84898C" }}>
                 We, at SeoskoServ, empower businesses by providing cost-effective cloud office, co-working space and HR
                 solutions that drive efficiency and reduce operational costs.
               </p>
-              <p>
+              <p style={{ color: "#84898C" }}>
                 By understanding the unique demands of the region, we deliver localized solutions backed by global
                 expertise, ensuring every business has the tools to thrive.
               </p>
-              <p>We specialize in remote office management, back office, outsourcing and business solutions.</p>
+              <p style={{ color: "#84898C" }}>We specialize in remote office management, back office, outsourcing and business solutions.</p>
 
               <div className="hover-image mt-4">
                 <img src="/src/assets/images/whoarewe.png" alt="Business presentation" />
@@ -100,8 +101,8 @@ export default function Home() {
           <Col lg={6}>
             <AnimatedElement animation="slideInRight">
               <div className="vision-box p-4 bg-white shadow-sm rounded">
-                <h3 className="mb-3">OUR VISION</h3>
-                <p>
+                <h3 className="mb-3 fw-bold" style={{ color: "#00A5E7" }}>Our Vision</h3>
+                <p style={{ color: "#84898C" }}>
                   To be a global leader in remote work solutions, enabling businesses across industries to thrive in
                   today's dynamic world.
                 </p>
@@ -128,13 +129,14 @@ export default function Home() {
       <AnimatedSection className="py-5" bgVectors={true}>
         <Row className="justify-content-center text-center mb-5">
           <Col md={8}>
-            <h2 className="section-title mb-4">OUR SERVICES</h2>
-            <p className="lead">Comprehensive solutions tailored to your business needs</p>
+            <h2 className="section-title mb-4 fw-bold" style={{ color: "#00A5E7" }}>Our Services</h2>
+            <p className="lead" style={{ color: "#84898C" }}>Comprehensive solutions tailored to your business needs</p>
           </Col>
         </Row>
 
-        <Row>
-          <Col md={4} className="mb-4">
+        {/* First Row - 3 Services */}
+        <Row className="mb-4">
+          <Col lg={4} md={6} className="mb-4">
             <AnimatedElement delay={1}>
               <Card className="h-100 border-0 shadow-sm">
                 <div className="hover-image">
@@ -142,12 +144,10 @@ export default function Home() {
                 </div>
                 <Card.Body className="text-center p-4">
                   <div className="service-icon">
-                    <Building size={40} className="text-primary" />
+                    <Building size={40} style={{color:"#00A5E7"}} />
                   </div>
-                  <Card.Title as="h3" className="h4 mb-3">
-                    Cloud Office Solutions
-                  </Card.Title>
-                  <Card.Text>
+                  <Card.Title as="h3" className="h4 mb-3">Cloud Office Solutions</Card.Title>
+                  <Card.Text style={{ color: "#84898C" }}>
                     Virtual offices and coworking spaces designed for productivity and collaboration.
                   </Card.Text>
                 </Card.Body>
@@ -155,7 +155,7 @@ export default function Home() {
             </AnimatedElement>
           </Col>
 
-          <Col md={4} className="mb-4">
+          <Col lg={4} md={6} className="mb-4">
             <AnimatedElement delay={2}>
               <Card className="h-100 border-0 shadow-sm">
                 <div className="hover-image">
@@ -163,20 +163,18 @@ export default function Home() {
                 </div>
                 <Card.Body className="text-center p-4">
                   <div className="service-icon">
-                    <PeopleFill size={40} className="text-primary" />
+                    <PeopleFill size={40} style={{color:"#00A5E7"}} />
                   </div>
-                  <Card.Title as="h3" className="h4 mb-3">
-                    HR & Workforce Management
-                  </Card.Title>
-                  <Card.Text>
-                    Comprehensive HR solutions from recruitment to payroll and compliance management.
+                  <Card.Title as="h3" className="h4 mb-3">HR & Workforce Management</Card.Title>
+                  <Card.Text style={{ color: "#84898C" }}>
+                    From recruitment to compliance—streamline your HR operations.
                   </Card.Text>
                 </Card.Body>
               </Card>
             </AnimatedElement>
           </Col>
 
-          <Col md={4} className="mb-4">
+          <Col lg={4} md={6} className="mb-4">
             <AnimatedElement delay={3}>
               <Card className="h-100 border-0 shadow-sm">
                 <div className="hover-image">
@@ -184,20 +182,62 @@ export default function Home() {
                 </div>
                 <Card.Body className="text-center p-4">
                   <div className="service-icon">
-                    <Laptop size={40} className="text-primary" />
+                    <Laptop size={40} style={{color:"#00A5E7"}} />
                   </div>
-                  <Card.Title as="h3" className="h4 mb-3">
-                    Technology Solutions
-                  </Card.Title>
-                  <Card.Text>IT support, digital marketing, and innovative tech solutions for your business.</Card.Text>
+                  <Card.Title as="h3" className="h4 mb-3">Technology Solutions</Card.Title>
+                  <Card.Text style={{ color: "#84898C" }}>
+                    IT support, digital tools, and innovative tech for your business.
+                  </Card.Text>
                 </Card.Body>
               </Card>
             </AnimatedElement>
           </Col>
         </Row>
 
+        {/* Second Row - 2 Services centered */}
+        <Row className="justify-content-center">
+          <Col lg={4} md={6} className="mb-4">
+            <AnimatedElement delay={4}>
+              <Card className="h-100 border-0 shadow-sm">
+                <div className="hover-image">
+                  <img src="/src/assets/images/backoffice.jpg" alt="Consulting services" />
+                </div>
+                <Card.Body className="text-center p-4">
+                  <div className="service-icon">
+                    <Headset size={40} style={{color:"#00A5E7"}} />
+                  </div>
+                  <Card.Title as="h3" className="h4 mb-3">Back-Office Support</Card.Title>
+                  <Card.Text style={{ color: "#84898C" }}>
+                    Legal Support, Travel Desk, Insurance Coverage
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </AnimatedElement>
+          </Col>
+
+          <Col lg={4} md={6} className="mb-4">
+            <AnimatedElement delay={5}>
+              <Card className="h-100 border-0 shadow-sm">
+                <div className="hover-image">
+                  <img src="/src/assets/images/businessoperation.jpg" alt="Branding" />
+                </div>
+                <Card.Body className="text-center p-4">
+                  <div className="service-icon">
+                    <Tools size={40} style={{color:"#00A5E7"}} />
+                  </div>
+                  <Card.Title as="h3" className="h4 mb-3">Business Operations...</Card.Title>
+                  <Card.Text style={{ color: "#84898C" }}>
+                   Administrative Support, Financial Services, Customer Support
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </AnimatedElement>
+          </Col>
+        </Row>
+
+        {/* Call to Action Button */}
         <div className="text-center mt-4">
-          <AnimatedElement animation="fadeInUp" delay={4}>
+          <AnimatedElement animation="fadeInUp" delay={6}>
             <Button as={Link} to="/services" variant="primary" size="lg" className="animate-pulse">
               View All Services
             </Button>
@@ -205,13 +245,14 @@ export default function Home() {
         </div>
       </AnimatedSection>
 
+
       {/* Why SeoskoServ Section with Background */}
       <SectionWithBackground backgroundImage="/src/assets/images/whychoose.jpg" className="p-5 img-fluid" overlayColor="rgba(0, 0, 0, 0.75)">
         <Row className="justify-content-start">
           <Col md={8} className="text-center text-white">
             <AnimatedElement>
               <h1 className="display-4 fw-bold mb-4">WHY SEOSKOSERV?</h1>
-              <p className="lead mb-4">
+              <p className="lead mb-4" >
                 Reimagine your workspace with Cloud Office Solutions—secure, scalable virtual offices designed for
                 seamless collaboration and growth.
               </p>
@@ -227,8 +268,8 @@ export default function Home() {
       <AnimatedSection className="py-5 bg-light-gray" bgWave={true}>
         <Row className="justify-content-center text-center mb-5">
           <Col md={8}>
-            <h2 className="section-title mb-4">WHAT OUR CLIENTS SAY</h2>
-            <p className="lead">Hear from businesses that have transformed with our solutions</p>
+            <h2 className="section-title mb-4 fw-bold" style={{ color: "#00A5E7" }}>What Our Clients Say</h2>
+            <p className="lead" style={{ color: "#84898C" }}>Hear from businesses that have transformed with our solutions</p>
           </Col>
         </Row>
 
@@ -251,11 +292,11 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="ms-3">
-                      <h5 className="mb-1">Sarah Johnson</h5>
+                      <h5 className="mb-1" style={{ color: "#00A5E7" }}>Sarah Johnson</h5>
                       <p className="text-muted mb-0">CEO, TechStart Inc.</p>
                     </div>
                   </div>
-                  <p className="mb-0">
+                  <p className="mb-0" style={{ color: "#84898C" }}>
                     "SeoskoServ transformed our operations. Their cloud office solutions allowed us to scale rapidly
                     without the overhead costs. Highly recommended for any growing business."
                   </p>
@@ -281,11 +322,11 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="ms-3">
-                      <h5 className="mb-1">Ahmed Al-Farsi</h5>
+                      <h5 className="mb-1" style={{ color: "#00A5E7" }}>Ahmed Al-Farsi</h5>
                       <p className="text-muted mb-0">Director, Gulf Enterprises</p>
                     </div>
                   </div>
-                  <p className="mb-0">
+                  <p className="mb-0" style={{ color: "#84898C" }}>
                     "The HR and workforce management services provided by SeoskoServ have been invaluable. They
                     understand the local market and provide solutions that truly work for our business."
                   </p>
@@ -300,8 +341,8 @@ export default function Home() {
       <AnimatedSection className="py-5" bgVectors={true}>
         <Row className="justify-content-center text-center mb-5">
           <Col md={8}>
-            <h2 className="section-title mb-4">OUR IMPACT</h2>
-            <p className="lead">See the difference our solutions make for businesses like yours</p>
+            <h2 className="section-title mb-4 fw-bold" style={{ color: "#00A5E7" }}>Our Imapact</h2>
+            <p className="lead" style={{ color: "#84898C" }}>See the difference our solutions make for businesses like yours</p>
           </Col>
         </Row>
 
@@ -310,7 +351,7 @@ export default function Home() {
             <AnimatedElement delay={1}>
               <div className="stat-item">
                 <div className="stat-number">40%</div>
-                <div className="stat-label">REDUCED OVERHEADS</div>
+                <div className="stat-label" style={{ color: "#84898C" }}>REDUCED OVERHEADS</div>
               </div>
             </AnimatedElement>
           </Col>
@@ -319,7 +360,7 @@ export default function Home() {
             <AnimatedElement delay={2}>
               <div className="stat-item">
                 <div className="stat-number">65%</div>
-                <div className="stat-label">INCREASED REVENUE</div>
+                <div className="stat-label" style={{ color: "#84898C" }}>INCREASED REVENUE</div>
               </div>
             </AnimatedElement>
           </Col>
@@ -328,7 +369,7 @@ export default function Home() {
             <AnimatedElement delay={3}>
               <div className="stat-item">
                 <div className="stat-number">85%</div>
-                <div className="stat-label">CLIENT SATISFACTION</div>
+                <div className="stat-label" style={{ color: "#84898C" }}>CLIENT SATISFACTION</div>
               </div>
             </AnimatedElement>
           </Col>
@@ -339,8 +380,8 @@ export default function Home() {
       <AnimatedSection className="py-5 bg-light-gray" bgDots={true}>
         <Row className="justify-content-center text-center mb-5">
           <Col md={8}>
-            <h2 className="section-title mb-4">TRUSTED BY</h2>
-            <p className="lead">Leading businesses across multiple industries</p>
+            <h2 className="section-title mb-4 fw-bold" style={{ color: "#00A5E7" }}>Trusted By</h2>
+            <p className="lead" style={{ color: "#84898C" }}>Leading businesses across multiple industries</p>
           </Col>
         </Row>
 
